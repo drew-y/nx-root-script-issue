@@ -23,7 +23,22 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "nx": "nx",
-    "workspace-generator": "nx workspace-generator"
+    "workspace-generator": "nx workspace-generator",
+    "nx-prepare": "npm install"
+  },
+  "nx": {
+    "includedScripts": [
+      "nx-prepare"
+    ],
+    "targets": {
+      "nx-prepare": {
+        "inputs": [
+          "{projectRoot}/package.json",
+          "{projectRoot}/package-lock.json",
+          "{projectRoot}/yarn.lock"
+        ]
+      }
+    }
   },
   "private": true,
   "packageManager": "yarn@1.22.19",
