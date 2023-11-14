@@ -1,3 +1,14 @@
+# Nx Root Script Issue Reproduction
+
+Forked from [nx example](https://github.com/nrwl/nx-examples)
+
+Steps to reproduce:
+
+1. `yarn`
+2. `yarn nx build cart`
+
+Expected `npm install` to run, does not happen.
+
 # NxExample
 
 This project was generated using [Nx](https://nx.dev).
